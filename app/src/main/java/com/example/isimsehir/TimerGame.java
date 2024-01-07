@@ -48,7 +48,7 @@ public class TimerGame extends AppCompatActivity {
         randomValueChoose();
     }
     private void startCountdown() {
-        countDownTimer = new CountDownTimer(10000, 1000) { // 60 seconds countdown
+        countDownTimer = new CountDownTimer(60000, 1000) {
             public void onTick(long millisUntilFinished) {
                 timerTextView.setText(formatTime(millisUntilFinished));
             }
