@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonNormal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:onClick="buttonmainoptions"
+        android:text="Normal Game"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewGameName"
+        app:layout_constraintStart_toStartOf="@+id/textViewGameName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGameName" />
+
+    <Button
+        android:id="@+id/buttonTime"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:onClick="buttonmainoptions"
+        android:text="Race Against Time"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/buttonNormal"
+        app:layout_constraintStart_toStartOf="@+id/buttonNormal"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNormal" />
+
+    <Button
+        android:id="@+id/buttonQuit"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:onClick="buttonmainoptions"
+        android:text="Quit"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTime"
+        app:layout_constraintStart_toStartOf="@+id/buttonTime"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTime" />
+
+    <TextView
+        android:id="@+id/textViewGameName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="City Crossword"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

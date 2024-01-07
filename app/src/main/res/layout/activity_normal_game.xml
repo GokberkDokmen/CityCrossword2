@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NormalGameActivity">
+
+    <TextView
+        android:id="@+id/textViewCityInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTotalScore"
+        app:layout_constraintStart_toStartOf="@+id/textViewTotalScore"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalScore" />
+
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCityInfo"
+        app:layout_constraintStart_toStartOf="@+id/textViewCityInfo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCityInfo" />
+
+    <EditText
+        android:id="@+id/editTextGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Guess"
+
+        android:inputType="text"
+        android:onClick="GuessText"
+        android:scrollbarSize="4dp"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCity"
+        app:layout_constraintStart_toStartOf="@+id/textViewCity"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCity" />
+
+    <Button
+        android:id="@+id/buttonGiveLetter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="buttonGiveletter"
+        android:text="Give a Letter(1)"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonGuessIt"
+        app:layout_constraintStart_toStartOf="@+id/editTextGuess"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGuess" />
+
+    <Button
+        android:id="@+id/buttonGuessIt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:onClick="buttonGuesit"
+        android:text="Guess it !"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextGuess"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGuess" />
+
+    <TextView
+        android:id="@+id/textViewTotalScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Total Section Score : 0"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
